@@ -4,13 +4,13 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey,
+        //backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-            title: Text("I am Rich"), backgroundColor: Colors.blueGrey[900]),
+            title: Text("I am Rich", style: TextStyle(color: Colors.white)),
+            backgroundColor: Colors.blueGrey[900]),
         body: Center(
           child: Image(
-            image: NetworkImage(
-                "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg"),
+            image: AssetImage("images/dolar.png"),
           ),
         ),
       ),
